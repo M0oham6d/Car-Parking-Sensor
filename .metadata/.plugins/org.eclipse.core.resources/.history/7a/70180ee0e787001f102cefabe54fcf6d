@@ -1,0 +1,61 @@
+/*
+ * Car_Parking_Sensor.c
+ * Author: Muhammed Ayman
+ * Module: Car Parking Sensor
+ */
+
+#include "Car_Parking_Sensor.h"
+
+uint16 g_distance = 0;
+
+void Inits(void)
+{
+	Ultrasonic_init();
+	LCD_init();
+	LEDS_init();
+	Buzzer_init();
+}
+
+void Calc_Distance_and_Display_on_LCD(void)
+{
+	g_distance = Ultrasonic_readDistance();
+
+	LCD_displayStringRowColumn(0, 0, "Distance = ");
+	LCD_intgerToString(g_distance);
+	if(g_distance < 10)
+	{
+		LCD_displayCharacter(' ');
+	}
+	LCD_displayStringRowColumn(0, 13, " cm");
+
+	if(g_distance <= 5)
+	{
+		LED_on(red);
+		LED_on(green);
+		LED_on(blue);
+		Buzzer_on();
+		_delay_ms(1000);
+		LED_off(red);
+		LED_off(green);
+		LED_off(blue);
+		Buzzer_off();
+		_delay_ms(1000);
+		LCD_displayStringRowColumn(1, 6, "-STOP-");
+	}
+}
+
+void Alarm(void)
+{
+
+}
+
+int main(void)
+{
+	Inits();
+
+	while(1)
+	{
+		Calc_Distance_and_Display_on_LCD();
+	}
+	return 0;
+}

@@ -1,0 +1,12 @@
+/*
+ * ultrasonic_sensor.h
+ * Author: Muhammed Ayman
+ * Module: Ultrasonic Sensor
+ */
+
+#ifndef HAL_ULTRASONIC_SENSOR_H_
+#define HAL_ULTRASONIC_SENSOR_H_
+
+
+
+#endif /* HAL_ULTRASONIC_SENSOR_H_ */

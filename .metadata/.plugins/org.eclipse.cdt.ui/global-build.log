@@ -1,0 +1,1455 @@
+18:39:33 **** Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../MCAL/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/adc.d" -MT"MCAL/adc.o" -c -o "MCAL/adc.o" "../MCAL/adc.c"
+Finished building: ../MCAL/adc.c
+ 
+Building file: ../MCAL/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/gpio.d" -MT"MCAL/gpio.o" -c -o "MCAL/gpio.o" "../MCAL/gpio.c"
+Finished building: ../MCAL/gpio.c
+ 
+Building file: ../MCAL/icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/icu.d" -MT"MCAL/icu.o" -c -o "MCAL/icu.o" "../MCAL/icu.c"
+../MCAL/icu.c: In function 'ICU_setCallBack':
+../MCAL/icu.c:76: warning: function return types not compatible due to 'volatile'
+Finished building: ../MCAL/icu.c
+ 
+Building file: ../MCAL/pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/pwm.d" -MT"MCAL/pwm.o" -c -o "MCAL/pwm.o" "../MCAL/pwm.c"
+Finished building: ../MCAL/pwm.c
+ 
+Building file: ../HAL/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/buzzer.d" -MT"HAL/buzzer.o" -c -o "HAL/buzzer.o" "../HAL/buzzer.c"
+Finished building: ../HAL/buzzer.c
+ 
+Building file: ../HAL/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" -c -o "HAL/lcd.o" "../HAL/lcd.c"
+In file included from ../HAL/lcd.h:11,
+                 from ../HAL/lcd.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/lcd.c
+ 
+Building file: ../HAL/leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/leds.d" -MT"HAL/leds.o" -c -o "HAL/leds.o" "../HAL/leds.c"
+Finished building: ../HAL/leds.c
+ 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:36: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13570 bytes (41.4% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:00 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:37: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13590 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        293 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:13 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:37: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13590 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        293 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:24 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:37: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13590 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        293 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:41 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:37: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13590 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        293 bytes (14.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:42:02 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:32: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:37: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:32: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13592 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:42:45 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13590 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:43:30 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13086 bytes (39.9% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:44:30 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13090 bytes (39.9% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:44:36 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:02 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:23 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:43 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:22 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:39 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:01 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:14 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:37 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:51 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13594 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:48:24 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/Car_Parking_Sensor.c: In function 'Calc_Distance_and_Display_on_LCD':
+../Application/Car_Parking_Sensor.c:33: warning: implicit declaration of function 'Alarm'
+../Application/Car_Parking_Sensor.c: At top level:
+../Application/Car_Parking_Sensor.c:38: warning: conflicting types for 'Alarm'
+../Application/Car_Parking_Sensor.c:33: warning: previous implicit declaration of 'Alarm' was here
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13596 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:48:59 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13596 bytes (41.5% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:50:08 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13648 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:51:08 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13716 bytes (41.9% Full)
+(.text + .data + .bootloader)
+
+Data:        295 bytes (14.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:51:55 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13736 bytes (41.9% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:53:31 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o ./MCAL/pwm.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13784 bytes (42.1% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:08:40 **** Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13784 bytes (42.1% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:08:57 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13784 bytes (42.1% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:09:12 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../MCAL/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/adc.d" -MT"MCAL/adc.o" -c -o "MCAL/adc.o" "../MCAL/adc.c"
+Finished building: ../MCAL/adc.c
+ 
+Building file: ../MCAL/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/gpio.d" -MT"MCAL/gpio.o" -c -o "MCAL/gpio.o" "../MCAL/gpio.c"
+Finished building: ../MCAL/gpio.c
+ 
+Building file: ../MCAL/icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/icu.d" -MT"MCAL/icu.o" -c -o "MCAL/icu.o" "../MCAL/icu.c"
+../MCAL/icu.c: In function 'ICU_setCallBack':
+../MCAL/icu.c:76: warning: function return types not compatible due to 'volatile'
+Finished building: ../MCAL/icu.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13646 bytes (41.6% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:13:38 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13646 bytes (41.6% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:18:15 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:18:55 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:19:12 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:20:11 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:20:40 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:21:49 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/ultrasonic_sensor.c:57: error: static declaration of 'Ultrasonic_edgeProcessing' follows non-static declaration
+../HAL/ultrasonic_sensor.h:50: error: previous declaration of 'Ultrasonic_edgeProcessing' was here
+make: *** [HAL/ultrasonic_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:22:00 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/ultrasonic_sensor.c: In function 'Ultrasonic_init':
+../HAL/ultrasonic_sensor.c:27: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../HAL/ultrasonic_sensor.c:27: error: (Each undeclared identifier is reported only once
+../HAL/ultrasonic_sensor.c:27: error: for each function it appears in.)
+make: *** [HAL/ultrasonic_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:22:46 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:23:05 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/ultrasonic_sensor.c:37: error: static declaration of 'Ultrasonic_Trigger' follows non-static declaration
+../HAL/ultrasonic_sensor.h:37: error: previous declaration of 'Ultrasonic_Trigger' was here
+make: *** [HAL/ultrasonic_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:23:16 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:23:46 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:53:03 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Building file: ../HAL/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/buzzer.d" -MT"HAL/buzzer.o" -c -o "HAL/buzzer.o" "../HAL/buzzer.c"
+Finished building: ../HAL/buzzer.c
+ 
+Building file: ../HAL/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" -c -o "HAL/lcd.o" "../HAL/lcd.c"
+In file included from ../HAL/lcd.h:11,
+                 from ../HAL/lcd.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/lcd.c
+ 
+Building file: ../HAL/three_leds.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/three_leds.d" -MT"HAL/three_leds.o" -c -o "HAL/three_leds.o" "../HAL/three_leds.c"
+Finished building: ../HAL/three_leds.c
+ 
+Building file: ../HAL/ultrasonic_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/ultrasonic_sensor.d" -MT"HAL/ultrasonic_sensor.o" -c -o "HAL/ultrasonic_sensor.o" "../HAL/ultrasonic_sensor.c"
+In file included from ../HAL/ultrasonic_sensor.h:10,
+                 from ../HAL/ultrasonic_sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/ultrasonic_sensor.c
+ 
+Building file: ../Application/Car_Parking_Sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/Car_Parking_Sensor.d" -MT"Application/Car_Parking_Sensor.o" -c -o "Application/Car_Parking_Sensor.o" "../Application/Car_Parking_Sensor.c"
+In file included from ../Application/Car_Parking_Sensor.h:10,
+                 from ../Application/Car_Parking_Sensor.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Application/Car_Parking_Sensor.c
+ 
+Building target: Car_Parking_Sensor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Sensor.map -mmcu=atmega32 -o "Car_Parking_Sensor.elf"  ./MCAL/adc.o ./MCAL/gpio.o ./MCAL/icu.o  ./HAL/buzzer.o ./HAL/lcd.o ./HAL/three_leds.o ./HAL/ultrasonic_sensor.o  ./Application/Car_Parking_Sensor.o   
+Finished building target: Car_Parking_Sensor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Sensor.elf  >"Car_Parking_Sensor.lss"
+Finished building: Car_Parking_Sensor.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:00:51 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:01:39 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

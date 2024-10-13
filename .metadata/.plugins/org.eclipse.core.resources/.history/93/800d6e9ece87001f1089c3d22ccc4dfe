@@ -1,0 +1,29 @@
+/*
+ * ultrasonic_sensor.h
+ * Author: Muhammed Ayman
+ * Module: Ultrasonic Sensor
+ */
+
+#ifndef HAL_ULTRASONIC_SENSOR_H_
+#define HAL_ULTRASONIC_SENSOR_H_
+
+#include <util/delay.h>
+#include "../MCAL/icu.h"
+#include "../Standard_Types/standard_types.h"
+#include "../MCAL/gpio.h"
+
+/*******************************************************************************
+ *                                Configurations                               *
+ *******************************************************************************/
+#define PORT_CONNECTION					PORTD_ID
+#define TRIGGER_PIN						PIN7_ID
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+void Ultrasonic_init(void);
+void Ultrasonic_Trigger(void);
+uint16 Ultrasonic_readDistance(void);
+void Ultrasonic_edgeProcessing(void);
+
+#endif /* HAL_ULTRASONIC_SENSOR_H_ */

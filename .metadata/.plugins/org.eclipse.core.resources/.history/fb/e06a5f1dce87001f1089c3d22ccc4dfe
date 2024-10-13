@@ -1,0 +1,52 @@
+/*
+ * ultrasonic_sensor.h
+ * Author: Muhammed Ayman
+ * Module: Ultrasonic Sensor
+ */
+
+#include "ultrasonic_sensor.h"
+
+uint8 g_edgeCount = 0;
+uint8 g_highCount = 0;
+
+/*******************************************************************************
+ *                      	Functions Definitions                              *
+ *******************************************************************************/
+void Ultrasonic_init(void)
+{
+	/*
+	 * Set up ICU Configuration.
+	 * Initialize ICU.
+	 * Set call back function.
+	 * */
+	ICU_ConfigType ICU_Configurations = {F_CPU_8, RAISING};
+	ICU_init(&ICU_Configurations);
+	ICU_setCallBack(Ultrasonic_edgeProcessing);
+	/* Set up pin direction for trigger pin as output. */
+	GPIO_setupPinDirection(PORT_CONNECTION, TRIGGER_PIN, PIN_OUTPUT);
+}
+
+void Ultrasonic_Trigger(void)
+{
+	GPIO_writePin(PORT_CONNECTION, TRIGGER_PIN, LOGIC_HIGH);
+	_delay_us(10);
+	GPIO_writePin(PORT_CONNECTION, TRIGGER_PIN, LOGIC_LOW);
+}
+
+uint16 Ultrasonic_readDistance(void)
+{
+	Ultrasonic_Trigger();
+	return (g_highCount / 117.6);
+}
+
+void Ultrasonic_edgeProcessing(void)
+{
+	g_edgeCount++;
+	ICU_clearTimerValue();
+	ICU_setEdgeDetectionType(FALLING);
+	if(2 == g_edgeCount)
+	{
+		g_highCount = ICU_getInputCaptureValue;
+		g_edgeCount = 0;
+	}
+}

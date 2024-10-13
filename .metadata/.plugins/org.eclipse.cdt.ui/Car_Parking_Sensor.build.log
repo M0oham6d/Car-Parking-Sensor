@@ -1,0 +1,20 @@
+09:01:39 **** Incremental Build of configuration Debug for project Car_Parking_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13688 bytes (41.8% Full)
+(.text + .data + .bootloader)
+
+Data:        301 bytes (14.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+09:01:39 Build Finished. 0 errors, 0 warnings. (took 217ms)
+

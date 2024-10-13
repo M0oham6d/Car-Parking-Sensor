@@ -1,0 +1,15 @@
+/*
+ * Car_Parking_Sensor.h
+ * Author: Muhammed Ayman
+ * Module: Car Parking Sensor
+ */
+
+#ifndef CAR_PARKING_SENSOR_H_
+#define CAR_PARKING_SENSOR_H_
+
+#include "HAL/buzzer.h"
+#include "HAL/lcd.h"
+#include "HAL/leds.h"
+#include "HAL/ultrasonic_sensor.h"
+
+#endif /* CAR_PARKING_SENSOR_H_ */

@@ -1,0 +1,13 @@
+/*
+ * ultrasonic_sensor.h
+ *
+ *  Created on: Oct 11, 2024
+ *      Author: Muhammed Ayman
+ */
+
+#ifndef HAL_ULTRASONIC_SENSOR_H_
+#define HAL_ULTRASONIC_SENSOR_H_
+
+
+
+#endif /* HAL_ULTRASONIC_SENSOR_H_ */
